@@ -2,28 +2,40 @@
 
 A curated catalog of publicly available dental and oral healthcare datasets for AI research, focusing on dental imaging, computer vision, and vision-language models (VLMs).
 
-This repository stores **metadata and links only**, not raw data. All metadata comes from official sources; unconfirmed values are marked `unknown`.
+This repository stores **metadata and links only**, not raw data. All datasets are listed in [`datasets.csv`](datasets.csv).
 
-## Files
+## Columns
 
-- [`datasets.csv`](datasets.csv): the catalog, one row per dataset (source of truth)
-- [`SCHEMA.md`](SCHEMA.md): column definitions and allowed values
-- [`datasets/`](datasets/): optional detailed notes per dataset
+| Column | Content |
+|---|---|
+| `name` | Official dataset name |
+| `year` | Year of first public release |
+| `data_type` | Dimension + modality, joined with ` + ` for multiple (e.g. `3D CBCT + text report`) |
+| `size` | Amount of data with units (e.g. `480 volumes`) |
+| `dataset_url` | Official download or landing page |
+| `paper_url` | Paper describing the dataset |
+| `access` | `open` / `registration` / `request` / `unavailable` / `unknown` |
+| `license` | License as stated on the official dataset page |
+| `verified` | Date and maintainer who checked the row against official sources; empty = not yet checked |
+| `notes` | Conflicts between sources, aliases, risks |
+
+## Verification rules
+
+- Every value must be traceable to the official dataset page or paper. Never guess.
+- Write `unknown` when a value cannot be confirmed.
+- When sources disagree, follow the official dataset page and record the conflict in `notes`.
+- Fill in `verified` only after a person has checked the row.
 
 ## Catalog by modality
 
 | Modality | Datasets |
 |---|---|
-| Panoramic radiographs | — |
-| Intraoral radiographs | — |
-| Cephalometric radiographs | — |
-| CBCT / 3D imaging | — |
-| Intraoral scans / 3D meshes | — |
-| Clinical photographs | — |
-| Vision-language (image + text) | — |
-| Other | — |
-
-See [`datasets.csv`](datasets.csv) for full metadata.
+| Panoramic X-ray | CariesXrays, OralXrays-9, DENTEX |
+| Periapical X-ray | DenPAR, PRAD, CariXray |
+| CBCT | ToothFairy, ToothFairy2, ToothFairy3, ToothFairy4 |
+| Intraoral scan | Teeth3DS, Teeth3DS+, Bite2Text |
+| Intraoral photo | AlphaDent, SMART-OM, Bite2Text |
+| Image + text report | ToothFairy4, Bite2Text |
 
 ## Contributing
 
