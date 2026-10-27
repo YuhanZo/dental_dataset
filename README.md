@@ -31,13 +31,20 @@ This repository stores **metadata and links only**, not raw data. All datasets a
 
 | Modality | Datasets |
 |---|---|
-| Panoramic X-ray | CariesXrays, OralXrays-9, DENTEX |
-| Periapical X-ray | DenPAR, PRAD, CariXray |
-| CBCT | ToothFairy, ToothFairy2, ToothFairy3, ToothFairy4 |
-| Intraoral scan | Teeth3DS, Teeth3DS+, Bite2Text |
-| Intraoral photo | AlphaDent, SMART-OM, Bite2Text |
-| Image + text report | ToothFairy4, Bite2Text |
-| Image + tabular metadata | DenPAR, SMART-OM, AlphaDent (sex/age in filenames) |
+| Panoramic X-ray | CariesXrays, OralXrays-9, DENTEX, Children's Dental Panoramic Radiographs (CDPR), OdontoAI Open Panoramic Radiographs, Dental Condition Detection - Romania, TED / TED3, Panoramic Radiographs with Periapical Lesions, STS-Tooth (STS-2D), Multimodal Dental Dataset (PhysioNet; acquired panoramic subset) |
+| Periapical X-ray | DenPAR, PRAD, CariXray, Multimodal Dental Dataset (PhysioNet; generated periapical views) |
+| Lateral cephalometric X-ray | Aariz / CEPHA29, PKU Cephalometric Dataset / Dental-Cepha |
+| CBCT | ToothFairy, ToothFairy2, ToothFairy3, ToothFairy4, Pulpy3D, STS-Tooth (STS-3D), FDTooth, MMDental, Multimodal Dental Dataset (PhysioNet) |
+| Intraoral scan | Teeth3DS, Teeth3DS+, TeethAlign3D, Pre-/Post-Orthodontic 3D Dental Dataset (Wang/Lei), Bite2Text |
+| Intraoral photo | AlphaDent, SMART-OM, Oral Images Dataset, Annotated Oral Cavity Images (OCA-OPMD), FDTooth, Bite2Text |
+| Image + text report / clinical record | ToothFairy4, Bite2Text, MMDental |
+| Image / video + text QA benchmark | MMOral-OPG-Bench (panoramic X-ray), MMOral-Uni-Bench (multimodal imaging and video; gated file composition not confirmed) |
+| Image + text training resource | MMOral-OPG-Training (panoramic-related; gated file composition not confirmed) |
+| Image + tabular metadata | DenPAR, SMART-OM, AlphaDent (sex/age in filenames), Annotated Oral Cavity Images (OCA-OPMD), FDTooth, MMDental, Multimodal Dental Dataset (PhysioNet) |
+| Oral histopathology | Histopathological Imaging Database for Oral Cancer Analysis, OSCC and Normal Tissue - Alexandria |
+| Oral hyperspectral imaging | ODSI-DB (spectral images, embedded RGB previews and measurement metadata) |
+| Text-only dental QA | dental_QA, Open-Domain-Oral-Disease-QA-Dataset |
+| Corpus with unconfirmed modality | OralCorpus (gated repository; modalities and schema not publicly established) |
 
 ## Contributing
 
